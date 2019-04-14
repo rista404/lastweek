@@ -65,7 +65,7 @@ func FetchPullReqs(client *githubv4.Client, ctx context.Context) ([]PullRequest,
 		Viewer struct {
 			PullRequests struct {
 				Nodes []PullRequest
-			} `graphql:"pullRequests(last: 10, orderBy: { field: CREATED_AT, direction: ASC })"`
+			} `graphql:"pullRequests(first: 10, orderBy: { field: CREATED_AT, direction: DESC })"`
 		}
 	}
 

@@ -34,7 +34,6 @@ type PullRequest struct {
 	}
 	Number int
 	Url    string
-	// Permalink string
 	// BodyText  string
 	Closed    bool
 	Merged    bool
